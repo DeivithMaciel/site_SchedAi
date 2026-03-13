@@ -12,7 +12,6 @@ export const container = styled.div`
 export const LogoList = styled.ul`
   display: flex;
   gap: 48px;
-  list-style: none;
 
   li {
     display: flex;

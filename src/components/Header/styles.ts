@@ -37,7 +37,6 @@ export const HeaderStyle = styled.header`
 
   ul {
     display: flex;
-    list-style: none;
     padding-left: 0;
 
     li {

@@ -25,6 +25,10 @@ export const GlobalStyles = createGlobalStyle`
     color: ${colors.white};
   }
 
+  ul {
+    list-style: none;
+  }
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
