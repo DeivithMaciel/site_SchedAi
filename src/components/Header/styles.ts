@@ -4,6 +4,10 @@ import { colors } from '../../styles/GlobalStyles'
 export const HeaderStyle = styled.header`
   background-color: ${colors.black};
   padding: 16px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 
   section {
     display: flex;

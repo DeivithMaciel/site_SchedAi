@@ -15,6 +15,10 @@ export const breakpoints = {
 }
 
 export const GlobalStyles = createGlobalStyle`
+  html {
+  scroll-behavior: smooth;
+}
+
   body {
     display: block;
     background-color: ${colors.darkBlack};
