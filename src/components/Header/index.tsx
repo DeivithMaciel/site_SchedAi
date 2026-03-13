@@ -1,10 +1,10 @@
-import { HeaderStyle } from './styles'
+import * as S from './styles'
 
 import logo from '../../assets/gifs/logo.gif'
 
 export const Header = () => {
   return (
-    <HeaderStyle>
+    <S.HeaderStyle>
       <section className="container">
         <div>
           <h1>SchedAi</h1>
@@ -24,8 +24,8 @@ export const Header = () => {
             <a href="testimonials">Testimonials</a>
           </li>
         </ul>
-        <button>Free Trial</button>
+        <S.Button>Free Trial</S.Button>
       </section>
-    </HeaderStyle>
+    </S.HeaderStyle>
   )
 }
