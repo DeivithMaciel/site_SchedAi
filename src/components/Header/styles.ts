@@ -45,18 +45,3 @@ export const HeaderStyle = styled.header`
     }
   }
 `
-
-export const Button = styled.button`
-  background-color: ${colors.green};
-  color: ${colors.white};
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 12px 24px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: ${colors.lightGreen};
-  }
-`

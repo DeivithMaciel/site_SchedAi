@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const colors = {
   lightGreen: '#7bed9f',
@@ -29,4 +29,34 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 1200px;
     margin: 0 auto;
   }
+`
+
+export const PrimaryButton = styled.button`
+  background-color: ${colors.green};
+  color: ${colors.white};
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${colors.lightGreen};
+  }
+`
+
+export const SecondaryButton = styled.button`
+  background-color: transparent;
+  color: ${colors.green};
+  border: 1px solid ${colors.green};
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${colors.black};
+}
 `

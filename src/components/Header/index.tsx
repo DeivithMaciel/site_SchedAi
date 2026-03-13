@@ -1,10 +1,12 @@
-import * as S from './styles'
+import { PrimaryButton } from "../../styles/GlobalStyles"
+
+import { HeaderStyle } from "./styles"
 
 import logo from '../../assets/gifs/logo.gif'
 
 export const Header = () => {
   return (
-    <S.HeaderStyle>
+    <HeaderStyle>
       <section className="container">
         <div>
           <h1>SchedAi</h1>
@@ -24,8 +26,8 @@ export const Header = () => {
             <a href="testimonials">Testimonials</a>
           </li>
         </ul>
-        <S.Button>Free Trial</S.Button>
+        <PrimaryButton>Free Trial</PrimaryButton>
       </section>
-    </S.HeaderStyle>
+    </HeaderStyle>
   )
 }
