@@ -26,6 +26,12 @@ export const HeaderStyle = styled.header`
 
     img {
       height: 36px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
     }
   }
 
