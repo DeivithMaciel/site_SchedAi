@@ -1,0 +1,25 @@
+export const Features = () => (
+  <div>
+    <section className="container">
+      <h2>Smart features built for productivity</h2>
+      <ul>
+        <li>
+          <h3>🧠 AI Smart Scheduling</h3>
+          <p>Our AI analyzes your availability and automatically suggests the best time for meetings.</p>
+        </li>
+        <li>
+          <h3>⚡ Conflict Detection</h3>
+          <p>Instantly detect scheduling conflicts and avoid double bookings with intelligent calendar management.</p>
+        </li>
+        <li>
+          <h3>🔔 Automated Reminders</h3>
+          <p>Send automatic email and notification reminders so no one misses an important meeting.</p>
+        </li>
+        <li>
+          <h3>📊 Productivity Insights</h3>
+          <p>Track your meetings and scheduling patterns to better understand how you spend your time.</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+)
