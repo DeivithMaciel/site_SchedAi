@@ -1,12 +1,39 @@
-import { PrimaryButton } from "../../styles/GlobalStyles"
+import { PrimaryButton } from '../../styles/GlobalStyles'
 
-import { HeaderStyle } from "./styles"
+import { HeaderStyle } from './styles'
 
 import logo from '../../assets/gifs/logo.gif'
+import { useRef, useState, useEffect } from 'react'
 
 export const Header = () => {
+  const [showHeader, setShowHeader] = useState(true)
+  const lastScrollY = useRef(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+
+      if (currentScrollY < 50) {
+        setShowHeader(true)
+        lastScrollY.current = currentScrollY
+        return
+      }
+
+      if (currentScrollY > lastScrollY.current) {
+        setShowHeader(false)
+      } else {
+        setShowHeader(true)
+      }
+
+      lastScrollY.current = currentScrollY
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
   return (
-    <HeaderStyle>
+    <HeaderStyle className={`${showHeader ? 'show' : 'hide'}`}>
       <section className="container">
         <div>
           <h1>SchedAi</h1>

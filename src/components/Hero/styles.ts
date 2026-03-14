@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin-top: 200px;
+  padding-bottom: 48px;
 
   section {
     display: flex;
@@ -21,6 +22,7 @@ export const Content = styled.div`
     p {
       font-size: 24px;
       line-height: 36px;
+      padding-bottom: 36px;
   }
 
   button {

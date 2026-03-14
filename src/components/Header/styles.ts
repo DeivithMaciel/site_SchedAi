@@ -8,6 +8,14 @@ export const HeaderStyle = styled.header`
   position: fixed;
   top: 0;
   z-index: 1;
+  transition: transform 0.3s ease-in-out;
+
+  &.show {
+    transform: translateY(0);
+  }
+  &.hide {
+    transform: translateY(-100%);
+  }
 
   section {
     display: flex;
@@ -41,11 +49,16 @@ export const HeaderStyle = styled.header`
 
     li {
       padding: 16px;
+      border-radius: 8px;
 
+      &:hover {
+        background-color: ${colors.darkBlack};
+      }
       a {
         color: ${colors.gray};
         text-decoration: none;
         font-size: 18px;
+
       }
     }
   }

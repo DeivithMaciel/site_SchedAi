@@ -1,27 +1,39 @@
+import { Container } from './styles'
+
 export const About = () => (
-  <div>
+  <Container>
     <section className="container">
+      <span>About Us</span>
       <h2>The future of intelligent scheduling</h2>
       <p>
         Our platform uses artificial intelligence to simplify scheduling for
         professionals and teams. By automatically analyzing availability,
         avoiding conflicts, and organizing meetings, it helps you save time and
-        focus on what truly matters.
+        focus on what truly matters. An AI-powered scheduling platform designed
+        to help professionals and teams manage meetings effortlessly.
       </p>
       <ul>
         <li>
-          10,000+<br />Active Users
+          <p>10,000+</p>
+          <br />
+          Active Users
         </li>
         <li>
-          250K+<br />Meetings Scheduled
+          <p>250K+</p>
+          <br />
+          Meetings Scheduled
         </li>
         <li>
-          40%<br />Time Saved
+          <p>40%</p>
+          <br />
+          Time Saved
         </li>
         <li>
-          Used in 40+ Countries
+          <p>Used in 40+</p>
+          <br />
+          Countries
         </li>
       </ul>
     </section>
-  </div>
+  </Container>
 )
