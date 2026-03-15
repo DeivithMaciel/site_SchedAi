@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { colors } from "../../styles/GlobalStyles";
+import styled from 'styled-components'
+import { colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   background-color: ${colors.darkGray};
@@ -28,8 +28,8 @@ export const Container = styled.div`
     li {
       display: flex;
       flex-direction: column;
+      background-color: ${colors.black};
       width: 100%;
-      border: 1px solid ${colors.gray};
       border-radius: 16px;
       padding: 24px;
       transition: transform 0.3s ease;
@@ -38,6 +38,11 @@ export const Container = styled.div`
         filter: brightness(1.2);
         transform: translateY(-6px);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      &.pro {
+        background-color: ${colors.darkBlack};
+        border: none;
       }
 
       h4 {
@@ -56,7 +61,7 @@ export const Container = styled.div`
       }
 
       button {
-        margin: auto 0 8px
+        margin: auto 0 8px;
       }
     }
   }

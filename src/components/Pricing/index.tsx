@@ -12,7 +12,7 @@ export const Princing = () => (
           <h4>Free</h4>
           <span>$0/month</span>
           <i>Features</i>
-          <div className='features'>
+          <div>
             <p>- Basic scheduling</p>
             <p>- Limited AI suggestions</p>
             <p>- Email reminders</p>
@@ -24,7 +24,7 @@ export const Princing = () => (
           <h4>Pro⭐</h4>
           <span>$15/month</span>
           <i>Features</i>
-          <div className='features'>
+          <div>
             <p>- Full AI scheduling</p>
             <p>- Conflict detection</p>
             <p>- Unlimited meetings</p>
@@ -37,7 +37,7 @@ export const Princing = () => (
           <h4>Team</h4>
           <span>$39/month</span>
           <i>Features</i>
-          <div className='features'>
+          <div>
             <p>- Multi-user access</p>
             <p>- Shared calendars</p>
             <p>- Team analytics</p>
