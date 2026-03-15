@@ -4,6 +4,7 @@ import { colors } from '../../styles/GlobalStyles'
 export const Container = styled.div`
   display: flex;
   text-align: center;
+  padding-bottom: 48px;
 
   h2 {
     font-size: 40px;

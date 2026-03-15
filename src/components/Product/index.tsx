@@ -1,7 +1,9 @@
+import * as S from './styles'
+
 import image from '../../assets/images/preview.png'
 
 export const Product = () => (
-  <div>
+  <S.Container>
     <section className="container">
       <span>Product Preview</span>
       <h2>Take control of your schedule.</h2>
@@ -9,8 +11,7 @@ export const Product = () => (
         Manage meetings, track availability, and let AI organize your calendar
         automatically.
       </h4>
-    </section>
-    <div>
+    <S.Content>
       <ul>
         <li>
           <h3>AI-powered scheduling</h3>
@@ -25,7 +26,8 @@ export const Product = () => (
           <p>See all your meetings and updates in one simple dashboard.</p>
         </li>
       </ul>
-    </div>
     <img src={image}/>
-  </div>
+    </S.Content>
+    </section>
+  </S.Container>
 )
