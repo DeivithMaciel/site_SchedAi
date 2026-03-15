@@ -1,7 +1,8 @@
 import { PrimaryButton } from '../../styles/GlobalStyles'
+import { Container } from './styles'
 
 export const Princing = () => (
-  <div>
+  <Container>
     <section className="container">
       <h5>Plicing</h5>
       <h2>Flexible plans for professionals and teams</h2>
@@ -11,7 +12,7 @@ export const Princing = () => (
           <h4>Free</h4>
           <span>$0/month</span>
           <i>Features</i>
-          <div>
+          <div className='features'>
             <p>- Basic scheduling</p>
             <p>- Limited AI suggestions</p>
             <p>- Email reminders</p>
@@ -19,11 +20,11 @@ export const Princing = () => (
           </div>
           <PrimaryButton>Start Free trial</PrimaryButton>
         </li>
-        <li>
+        <li className='pro'>
           <h4>Pro⭐</h4>
           <span>$15/month</span>
           <i>Features</i>
-          <div>
+          <div className='features'>
             <p>- Full AI scheduling</p>
             <p>- Conflict detection</p>
             <p>- Unlimited meetings</p>
@@ -36,7 +37,7 @@ export const Princing = () => (
           <h4>Team</h4>
           <span>$39/month</span>
           <i>Features</i>
-          <div>
+          <div className='features'>
             <p>- Multi-user access</p>
             <p>- Shared calendars</p>
             <p>- Team analytics</p>
@@ -47,5 +48,5 @@ export const Princing = () => (
         </li>
       </ul>
     </section>
-  </div>
+  </Container>
 )
