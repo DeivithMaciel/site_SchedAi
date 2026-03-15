@@ -1,9 +1,10 @@
 import image1 from '../../assets/images/client.1.png'
 import image2 from '../../assets/images/client.2.png'
 import image3 from '../../assets/images/client.3.png'
+import { Container } from './styles'
 
 export const Testonials = () => (
-  <div>
+  <Container>
     <section className="container">
       <h5>What users say</h5>
       <h2>Trusted by thousands of professionals</h2>
@@ -28,5 +29,5 @@ export const Testonials = () => (
         </li>
       </ul>
     </section>
-  </div>
+  </Container>
 )
