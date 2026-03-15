@@ -6,6 +6,12 @@ export const Container = styled.div`
   text-align: center;
   padding: 96px 0;
 
+
+  h5 {
+    color: ${colors.green};
+    font-size: 16px;
+  }
+
   h2 {
     font-size: 48px;
     padding-bottom: 16px;

@@ -8,6 +8,7 @@ import analytics from '../../assets/gifs/analytics.gif'
 export const Features = () => (
   <Container>
     <section className="container">
+      <h5>Features</h5>
       <h2>Smart features built for productivity</h2>
       <ul>
         <li>
