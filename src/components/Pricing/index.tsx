@@ -2,7 +2,7 @@ import { PrimaryButton } from '../../styles/GlobalStyles'
 import { Container } from './styles'
 
 export const Princing = () => (
-  <Container>
+  <Container id='pricing'>
     <section className="container">
       <h5>Plicing</h5>
       <h2>Flexible plans for professionals and teams</h2>

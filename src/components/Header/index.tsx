@@ -44,13 +44,13 @@ export const Header = () => {
             <a href="#features">Features</a>
           </li>
           <li>
-            <a href="ai">AI</a>
+            <a href="#ai">AI</a>
           </li>
           <li>
-            <a href="pricing">Pricing</a>
+            <a href="#pricing">Pricing</a>
           </li>
           <li>
-            <a href="testimonials">Testimonials</a>
+            <a href="#testimonials">Testimonials</a>
           </li>
         </ul>
         <PrimaryButton>Free Trial</PrimaryButton>

@@ -1,9 +1,10 @@
 import { Facebook, Instagram, Mail, Twitter } from 'lucide-react'
 
 import logo from '../../assets/gifs/logo.gif'
+import { Container } from './styles'
 
 export const Footer = () => (
-  <div>
+  <Container>
     <section className="container">
       <h1>SchedAi<img src={logo}/></h1>
       <div className="icons">
@@ -12,22 +13,22 @@ export const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Instagram size={36} />
+              <Instagram size={48} />
             </a>
 
             <a href="#">
-              <Facebook size={36} />
+              <Facebook size={48} />
             </a>
 
-            <a href="tel:+5551981458704">
-              <Twitter size={36} />
+            <a href="#">
+              <Twitter size={48} />
             </a>
 
             <a href="mailto:deivithfagundes@gmail.com">
-              <Mail size={36} />
+              <Mail size={48} />
             </a>
           </div>
     </section>
     <span>&copy;{new Date().getFullYear()} SchedAI all rights reserved</span>
-  </div>
+  </Container >
 )
