@@ -69,14 +69,30 @@ export const Container = styled.div`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
+  padding: 24px;
+
+    ul {
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
     padding: 16px;
 
     h2 {
-      font-size: 40px;
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 16px;
     }
 
     ul {
       gap: 16px;
+      flex-direction: column;
+
+      li {
+        width: 80%;
+      }
     }
   }
 `

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   padding: 64px 0;
@@ -25,5 +25,22 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     gap: 48px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .buttons {
+      gap: 8px;
+      flex-direction: column;
+
+      button {
+        // font-size: 16px;
+      }
+    }
   }
 `

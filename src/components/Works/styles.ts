@@ -57,7 +57,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 48px;
+    padding: 48px 0;
 
     h2 {
       font-size: 32px;
@@ -68,6 +68,30 @@ export const Container = styled.div`
       flex-wrap: wrap;
       justify-content: center;
       gap: 48px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    h2 {
+      font-size: 24px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0 48px;
+
+      li {
+        span {
+          font-size: 56px;
+        }
+        h3 {
+          font-size: 24px;
+          margin: 16px 0;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
     }
   }
 `

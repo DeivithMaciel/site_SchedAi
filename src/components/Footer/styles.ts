@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   background-color: ${colors.darkGray};
@@ -32,6 +32,25 @@ export const Container = styled.div`
         filter: brightness(1.2);
         transform: translateY(-6px);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    text-align: center;
+
+    h1 {
+      font-size: 24px;
+    }
+    img {
+      height: 24px;
+    }
+
+    .icons {
+      a {
+        svg {
+          height: 40px;
+        }
       }
     }
   }

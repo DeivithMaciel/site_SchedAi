@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { breakpoints } from "../../styles/GlobalStyles";
+import styled from 'styled-components'
+import { breakpoints } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   margin-top: 200px;
@@ -17,7 +17,20 @@ export const Container = styled.div`
 
     img {
       height: 85%;
-      // width: 90%;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    margin-top: 140px;
+    padding-bottom: 16px;
+
+    section {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      width: 80%;
     }
   }
 `
@@ -29,12 +42,12 @@ export const Content = styled.div`
 
   h2 {
     font-size: 48px;
-    }
+  }
 
-    p {
-      font-size: 24px;
-      line-height: 36px;
-      padding-bottom: 36px;
+  p {
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 36px;
   }
 
   button {
@@ -48,6 +61,25 @@ export const Content = styled.div`
 
     p {
       font-size: 18px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+
+      button {
+        margin: 0;
+      }
     }
   }
 `

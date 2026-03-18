@@ -72,4 +72,17 @@ export const HeaderStyle = styled.header`
       }
     }
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    div {
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+
+    ul {
+      display: none;
+    }
+  }
 `

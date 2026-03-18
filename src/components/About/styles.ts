@@ -64,4 +64,31 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+  padding: 32px 0;
+
+    section {
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 0;
+      }
+
+      ul {
+
+        li {
+          font-size: 12px;
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
 `

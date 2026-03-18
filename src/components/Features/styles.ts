@@ -62,4 +62,33 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+  padding: 32px 0;
+
+  h2 {
+    font-size: 24px;
+  }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+
+        img {
+          height: 88px;
+          width: 88px;
+        }
+        h3 {
+          font-size: 24px;
+          margin: 0;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
 `

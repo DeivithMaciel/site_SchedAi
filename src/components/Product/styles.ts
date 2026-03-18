@@ -24,6 +24,14 @@ export const Container = styled.div`
       font-size: 40px;
     }
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 48px 0;
+
+    h4 {
+      padding: 0 16px;
+    }
+  }
 `
 
 export const Content = styled.div`
@@ -69,6 +77,28 @@ export const Content = styled.div`
           font-size: 16px;
         }
       }
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      padding: 0;
+      gap: 16px;
+      text-align: center;
+
+      li {
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
     }
   }
 `

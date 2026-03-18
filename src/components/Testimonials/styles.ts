@@ -19,6 +19,7 @@ export const Container = styled.div`
     display: flex;
     gap: 15%;
     justify-content: center;
+    align-items: stretch;
 
     li {
       background-color: ${colors.darkGray};
@@ -27,7 +28,9 @@ export const Container = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
+      flex: 1;
+      // width: 100%;
+      max-width: 100%;
       padding: 16px;
       transition: transform 0.3s ease;
 
@@ -68,6 +71,34 @@ export const Container = styled.div`
     ul {
       gap: 5%;
       padding: 0;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    ul {
+      flex-direction: column;
+      gap: 16px;
+      justify-content: center;
+
+      li {
+        // width: 50%;
+        // max-width: 100%;
+
+        img {
+          height: 84px;
+          width: 84px;
+        }
+        h3 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
     }
   }
 `

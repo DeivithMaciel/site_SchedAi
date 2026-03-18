@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoints } from '../../styles/GlobalStyles'
 // import { breakpoints } from '../../styles/GlobalStyles'
 
 export const container = styled.div`
@@ -41,6 +42,22 @@ export const LogoList = styled.ul`
       &:hover {
         transform: translateY(-6px);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 16px;
+    margin: 0;
+    padding: 0 16px;
+
+    li {
+      img {
+        height: 32px;
+        width: 32px;
+      }
+      span {
+        font-size: 32px;
       }
     }
   }
