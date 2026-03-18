@@ -9,7 +9,7 @@ export const Hero = () => {
     <S.Container>
       <section className="container">
         <S.Content>
-          <h2>Let AI schedule your meetings</h2>
+          <h2>Let AI manage your meetings automatically</h2>
           <p>
             Stop wasting time managing your calendar. Let AI find the perfect
             time for every meeting.

@@ -29,6 +29,8 @@ export const Container = styled.div`
       display: flex;
       flex-direction: column;
       background-color: ${colors.black};
+      border-top: 1px solid ${colors.gray};
+      border-bottom: 1px solid ${colors.gray};
       width: 100%;
       border-radius: 16px;
       padding: 24px;
@@ -42,7 +44,6 @@ export const Container = styled.div`
 
       &.pro {
         background-color: ${colors.darkBlack};
-        border: none;
       }
 
       h4 {

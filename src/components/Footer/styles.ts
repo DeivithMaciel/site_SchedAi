@@ -21,10 +21,18 @@ export const Container = styled.div`
   .icons {
     display: flex;
     justify-content: center;
-    gap: 16px;
 
     a {
       color: ${colors.gray};
+      transition: transform 0.3s ease;
+      padding: 8px;
+      border-radius: 16px;
+
+      &:hover {
+        filter: brightness(1.2);
+        transform: translateY(-6px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
     }
   }
 `
