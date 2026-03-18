@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const HeaderStyle = styled.header`
   background-color: ${colors.black};
@@ -45,7 +45,6 @@ export const HeaderStyle = styled.header`
 
   ul {
     display: flex;
-    padding-left: 0;
 
     li {
       padding: 16px;
@@ -58,7 +57,18 @@ export const HeaderStyle = styled.header`
         color: ${colors.gray};
         text-decoration: none;
         font-size: 18px;
+      }
+    }
+  }
 
+  @media (max-width: ${breakpoints.tablet}) {
+  section {
+    padding: 0 24px;
+  }
+
+    ul {
+      li {
+        padding: 8px;
       }
     }
   }

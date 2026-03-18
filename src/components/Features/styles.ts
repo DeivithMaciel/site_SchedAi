@@ -1,11 +1,10 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   display: flex;
   text-align: center;
   padding: 96px 0;
-
 
   h5 {
     color: ${colors.green};
@@ -44,6 +43,22 @@ export const Container = styled.div`
       p {
         font-size: 24px;
         line-height: 36px;
+      }
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    h2 {
+      font-size: 36px;
+    }
+
+    ul {
+      gap: 16px;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 48px;
+
+      li {
+        width: 80%;
       }
     }
   }

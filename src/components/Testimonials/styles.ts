@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   padding: 96px 0;
@@ -17,7 +17,8 @@ export const Container = styled.div`
 
   ul {
     display: flex;
-    gap: 20%;
+    gap: 15%;
+    justify-content: center;
 
     li {
       background-color: ${colors.darkGray};
@@ -54,6 +55,19 @@ export const Container = styled.div`
       span {
         margin: auto auto 8px 8px;
       }
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 36px;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    ul {
+      gap: 5%;
+      padding: 0;
     }
   }
 `

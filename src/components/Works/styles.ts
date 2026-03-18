@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   display: flex;
@@ -45,14 +45,29 @@ export const Container = styled.div`
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
       }
 
-        h3 {
-          font-size: 32px;
-          font-weight: bold;
-        }
+      h3 {
+        font-size: 32px;
+        font-weight: bold;
+      }
 
-        p {
-          font-size: 24px;
-        }
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 48px;
+
+    h2 {
+      font-size: 32px;
+      padding-bottom: 32px;
+    }
+
+    ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 48px;
     }
   }
 `

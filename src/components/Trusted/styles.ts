@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+// import { breakpoints } from '../../styles/GlobalStyles'
 
 export const container = styled.div`
   display: flex;
@@ -11,6 +12,8 @@ export const container = styled.div`
 
 export const LogoList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 48px;
   padding: 36px 0;
 

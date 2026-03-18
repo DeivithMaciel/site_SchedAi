@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   padding: 64px 0;
@@ -46,6 +46,21 @@ export const Container = styled.div`
           padding: 0;
           margin: 0;
         }
+      }
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 48px 24px;
+
+    section {
+    h2 {
+      font-size: 40px;
+    }
+
+      ul {
+        max-width: 100%;
+        padding: 0;
       }
     }
   }

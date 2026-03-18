@@ -28,6 +28,7 @@ export const GlobalStyles = createGlobalStyle`
 
   ul {
     list-style: none;
+    padding-left: 0;
   }
 
   .container {
@@ -63,5 +64,5 @@ export const SecondaryButton = styled.button`
 
   &:hover {
     background-color: ${colors.black};
-}
+  }
 `

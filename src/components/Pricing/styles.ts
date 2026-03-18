@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   background-color: ${colors.darkGray};
@@ -24,6 +24,7 @@ export const Container = styled.div`
     display: flex;
     gap: 20%;
     padding: 48px 0 0 0;
+    justify-content: center;
 
     li {
       display: flex;
@@ -64,6 +65,18 @@ export const Container = styled.div`
       button {
         margin: auto 0 8px;
       }
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 16px;
+
+    h2 {
+      font-size: 40px;
+    }
+
+    ul {
+      gap: 16px;
     }
   }
 `

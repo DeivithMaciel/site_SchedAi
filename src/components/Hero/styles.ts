@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/GlobalStyles";
 
 export const Container = styled.div`
   margin-top: 200px;
@@ -7,6 +8,17 @@ export const Container = styled.div`
   section {
     display: flex;
     gap: 128px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    section {
+      gap: 32px;
+    }
+
+    img {
+      height: 85%;
+      // width: 90%;
+    }
   }
 `
 
@@ -27,5 +39,15 @@ export const Content = styled.div`
 
   button {
     margin-right: 16px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
+    }
   }
 `

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { colors } from "../../styles/GlobalStyles";
+import styled from 'styled-components'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   background-color: ${colors.darkGray};
@@ -17,6 +17,12 @@ export const Container = styled.div`
 
   h4 {
     font-size: 16px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    h2 {
+      font-size: 40px;
+    }
   }
 `
 
@@ -49,5 +55,20 @@ export const Content = styled.div`
     height: 50%;
     width: 50%;
     border-radius: 16px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 16px;
+
+    ul {
+      li {
+        h3 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
   }
 `
