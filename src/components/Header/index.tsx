@@ -1,9 +1,9 @@
-import { PrimaryButton } from '../../styles/GlobalStyles'
+import { useRef, useState, useEffect } from 'react'
 
+import { PrimaryButton } from '../../styles/GlobalStyles'
 import { HeaderStyle } from './styles'
 
 import logo from '../../assets/gifs/logo.gif'
-import { useRef, useState, useEffect } from 'react'
 
 export const Header = () => {
   const [showHeader, setShowHeader] = useState(true)

@@ -1,5 +1,5 @@
-import { PrimaryButton, SecondaryButton } from "../../styles/GlobalStyles";
 import { Container } from "./styles";
+import { PrimaryButton, SecondaryButton } from "../../styles/GlobalStyles";
 
 export const CTA = () => (
   <Container>

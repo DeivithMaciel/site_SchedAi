@@ -1,5 +1,4 @@
 import { PrimaryButton, SecondaryButton } from "../../styles/GlobalStyles"
-
 import * as S from './styles'
 
 import image from '../../assets/images/image.about.png'

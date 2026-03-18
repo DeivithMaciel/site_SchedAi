@@ -1,6 +1,6 @@
 import styled from 'styled-components'
+
 import { breakpoints } from '../../styles/GlobalStyles'
-// import { breakpoints } from '../../styles/GlobalStyles'
 
 export const container = styled.div`
   display: flex;

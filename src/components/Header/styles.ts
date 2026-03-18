@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const HeaderStyle = styled.header`
@@ -53,6 +54,7 @@ export const HeaderStyle = styled.header`
       &:hover {
         background-color: ${colors.darkBlack};
       }
+
       a {
         color: ${colors.gray};
         text-decoration: none;

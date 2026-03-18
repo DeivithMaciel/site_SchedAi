@@ -1,7 +1,8 @@
+import { Container } from './styles'
+
 import image1 from '../../assets/images/client.1.png'
 import image2 from '../../assets/images/client.2.png'
 import image3 from '../../assets/images/client.3.png'
-import { Container } from './styles'
 
 export const Testonials = () => (
   <Container id='testimonials'>

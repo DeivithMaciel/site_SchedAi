@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`

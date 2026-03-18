@@ -1,7 +1,8 @@
 import { Facebook, Instagram, Mail, Twitter } from 'lucide-react'
 
-import logo from '../../assets/gifs/logo.gif'
 import { Container } from './styles'
+
+import logo from '../../assets/gifs/logo.gif'
 
 export const Footer = () => (
   <Container>
